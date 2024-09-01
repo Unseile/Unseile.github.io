@@ -1,0 +1,286 @@
+html {
+	background-image: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Gérer les dimensions de manière plus prévisible */
+}
+.sticky {
+	background-color: #5a5a5a;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+.navigateur li ul {
+	color: white;
+	font-size: 17px;
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.mobile {
+	visibility: hidden;
+	z-index: 2;
+	text-align: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+#triggerButton:hover {
+	background-color: #BBBBBB;
+	border-radius: 10px;
+	color: black;
+}
+
+#triggerButton {
+    cursor: pointer;
+	background-color: #5a5a5a;
+	border: none;
+}
+
+.bloc {
+    width: 190px;
+    height: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+	font-family: 'MaPolice';
+	font-size: 14px;
+	position: absolute;
+	z-index: 2;
+}
+
+.bloc.active {
+    height: 400px; /* Hauteur finale après déroulement */
+    opacity: 1;
+	text-align: inline;
+	font-family: 'MaPolice';
+	font-size: 14px;
+	color: #5a5a5a;
+	float: right;
+	z-index: 2;
+}
+
+.bloc ul, li {
+	padding: 20px;
+	list-style-type: none;
+	font-family: Noto Sans, sans-serif;
+}
+
+.bloc ul {
+	border-bottom: 1px solid;
+}
+
+#premier {
+	border-top: 1px solid;
+}
+
+
+@font-face {
+	font-family: 'MaPolice';
+	src: url('Merriweather/Merriweather-Light.ttf') format('truetype');
+}
+
+.sticky h1 {
+	color: #3DA9E8;
+	font-family: 'MaPolice';
+	font-size: 30px;
+	margin-right: auto;
+}
+
+.titre {
+	justify-content: flex-start;
+}
+
+.actif {
+	text-decoration: none;
+	outline: none;
+	color: white;
+}
+
+.actifMobile {
+	color: black;
+	text-decoration: none;
+	outline: none;
+}
+
+.hover:hover {
+	background-color: #BBBBBB;
+	color: black;
+}
+
+#premier:hover {
+	border-color: #4E5152;
+}
+
+.hoverMobile:hover {
+	background-color: #f5f5f5;
+	color:  #3DA9E8;
+	border-color: #4E5152;
+}
+
+.image2 {
+	display: flex;
+	justify-content: center;
+}
+
+.image21 {
+	margin: auto;
+	max-width: 100%;
+	border-bottom: 10px solid #3DA9E8;
+}
+
+.texte {
+	text-align: justify;
+	font-size: 18px;
+	font-family: Noto Sans, sans-serif;
+	color: black;
+	padding-right: 400px;
+	padding-left: 400px;
+	margin: auto;
+	margin-top: 60px;
+	line-height: 1.7;
+	font-weight: 500;
+	position: relative;
+}
+
+
+.imageConcert {
+	margin: auto;
+	max-width: 100%;
+	margin-right: 600px;
+	border-radius: 10px;
+}
+
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: #c7ecff ;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.aligner2 {
+	display: flex;
+	margin-top: 40px;
+	margin: auto;
+}
+
+.aligner p {
+	background-color: #c7ecff ;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.imageAffiche {
+	max-width: 40%;
+	border: 1px solid gray;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.piedDePage {
+	background-color: #989797;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+}
+
+.piedDePage  p {
+	font-family: Noto Sans, sans-serif;
+	color: white;
+	margin-right: 10px;
+}
+
+.RS {
+	margin-right: 10px;
+}
+.video3 {
+	margin-top: 30px;
+	position: relative;
+	text-align: left;
+}
+.video4 {
+	position: relative;
+	text-align: right;
+	margin-top: 50px;
+	margin-right: 100px;
+}
+.video2 {
+	position: relative;
+	text-align: left;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+.video1 {
+	position: relative;
+	text-align: right;
+	margin-top: 50px;
+	margin-right: 100px;
+}
+@media screen and (max-width: 1790px) {
+	.texte {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+	.imageAffiche {
+		max-width: 60%;
+	}
+}
+@media screen and (max-width: 1230px) {
+	h1 {
+		font-size: 22px; 
+	}
+	.navigateur li ul {
+		font-size: 12px;
+		padding: 15px;
+	}
+	.aligner {
+		display: contents;
+	}
+	.imageConcert2 {
+		display: flex;
+	}
+	.imageConcert {
+		max-width: 80%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+@media screen and (max-width: 932px) {
+	.navigateur li ul {
+		display: none;
+	}
+	.texte {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.texte2 {
+		font-size: 11px;
+	}
+	.mobile {
+		visibility: visible;
+		margin-right: 2%;
+	}
+}
+@media screen and (max-width: 440px) {
+	.sticky h1 {
+		display: none;
+	}
+	.texte {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.texte1 {
+		font-size: 13px;
+	}
+	
+}
